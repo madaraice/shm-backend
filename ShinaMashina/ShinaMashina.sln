@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShinaMashina", "ShinaMashina\ShinaMashina.csproj", "{31149280-4795-4B59-BEA0-16B6D20C7F24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShinaMashina", "ShinaMashina\ShinaMashina.csproj", "{31149280-4795-4B59-BEA0-16B6D20C7F24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{ABF0CE43-071E-43F9-A209-633DBB995FB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShinaMashina.Data.Postgres", "ShinaMashina.Data.Postgres\ShinaMashina.Data.Postgres.csproj", "{456E8DDE-2D32-400C-98DA-17F2F669F16E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShinaMashina.Data.Postgres.Test", "ShinaMashina.Data.Postgres.Test\ShinaMashina.Data.Postgres.Test.csproj", "{879DC26A-1673-4AAC-8EAF-82B9E4D1789F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,21 @@ Global
 		{31149280-4795-4B59-BEA0-16B6D20C7F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31149280-4795-4B59-BEA0-16B6D20C7F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31149280-4795-4B59-BEA0-16B6D20C7F24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{456E8DDE-2D32-400C-98DA-17F2F669F16E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{456E8DDE-2D32-400C-98DA-17F2F669F16E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{456E8DDE-2D32-400C-98DA-17F2F669F16E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{456E8DDE-2D32-400C-98DA-17F2F669F16E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{879DC26A-1673-4AAC-8EAF-82B9E4D1789F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{879DC26A-1673-4AAC-8EAF-82B9E4D1789F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{879DC26A-1673-4AAC-8EAF-82B9E4D1789F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{879DC26A-1673-4AAC-8EAF-82B9E4D1789F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{456E8DDE-2D32-400C-98DA-17F2F669F16E} = {ABF0CE43-071E-43F9-A209-633DBB995FB0}
+		{879DC26A-1673-4AAC-8EAF-82B9E4D1789F} = {ABF0CE43-071E-43F9-A209-633DBB995FB0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45B6CB7B-DCB1-4959-97E9-F94765E3A9A8}
